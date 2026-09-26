@@ -10,5 +10,4 @@ Portfolio: Stock VOO| Weight: 56.2| Cost 634.32
 Holdings 1 Heatmap: red
 Holdings 2 Heatmap: green
 Selection List: ['VOO', 'QQQM', 'VTI']
-'''
 
