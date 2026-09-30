@@ -29,4 +29,15 @@ Portfolio: Stock VOO| Weight: 56.2| Cost 634.32
 Holdings 1 Heatmap: red
 Holdings 2 Heatmap: green
 Selection List: ['VOO', 'QQQM', 'VTI']
+Output of Quantitative Portfolio Tracker & Risk Engine
+======================================================================
+          QUANT PORTFOLIO RISK & PERFORMANCE DASHBOARD           
+======================================================================
+Ticker: VOO   | Shares: 4.08   | Price: $524.15 | Value: $2,137.54 | Vol: 12.4% | Signal: BULLISH | Weight: 80.5%
+Ticker: NVDA  | Shares: 1.00   | Price: $121.40 | Value: $121.50   | Vol: 48.2% | Signal: BULLISH | Weight: 4.6%
+Ticker: IJR   | Shares: 1.11   | Price: $358.12 | Value: $396.87   | Vol: 18.1% | Signal: BEARISH | Weight: 14.9%
+----------------------------------------------------------------------
+Total Portfolio Value:       $2,655.91
+Weighted Annual Volatility:  14.88%
+======================================================================
 
