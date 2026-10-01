@@ -42,8 +42,9 @@ Bash
 python portfolio_tracker.py
 Sample Terminal Output
 Note: Output generated dynamically at runtime based on live Yahoo Finance market data.
-'''text
-Plaintext
+## Sample Terminal Output
+
+```text
 ======================================================================
           QUANT PORTFOLIO RISK & PERFORMANCE DASHBOARD          
 ======================================================================
@@ -51,6 +52,9 @@ Ticker: VOO   | Shares: 4.0886 | Price: $700.86 | Value: $2,865.54 | Vol: 11.2% 
 Ticker: NVDA  | Shares: 1.0017 | Price: $228.38 | Value: $228.77   | Vol: 42.1% | Signal: BULLISH | Weight:  7.1%
 Ticker: IJR   | Shares: 1.1082 | Price: $136.04 | Value: $150.76   | Vol: 16.5% | Signal: BULLISH | Weight:  4.6%
 ----------------------------------------------------------------------
+Total Portfolio Value:       $3,245.07
+Weighted Annual Volatility:  13.63%
+======================================================================
 Total Portfolio Value:       $3,245.07
 Weighted Annual Volatility:  13.63%
 ======================================================================
