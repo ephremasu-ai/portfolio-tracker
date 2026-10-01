@@ -28,6 +28,7 @@ The tracker defaults to the following portfolio configuration:
 
 Note: Output generated dynamically at runtime based on real-time Yahoo Finance market data.
 
+Plaintext
 ======================================================================
           QUANT PORTFOLIO RISK & PERFORMANCE DASHBOARD          
 ======================================================================
