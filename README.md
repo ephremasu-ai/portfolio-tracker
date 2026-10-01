@@ -1,6 +1,6 @@
 # Quantitative Portfolio Risk & Performance Tracker
 
-An object-oriented Python application that tracks stock portfolio positions, fetches real-time market data via `yfinance`, and computes core quantitative risk and trend metrics.
+An object-oriented Python application designed to track stock portfolio positions, fetch real-time market data via `yfinance`, and compute core quantitative risk and trend metrics.
 
 ---
 
@@ -26,7 +26,22 @@ The tracker defaults to the following portfolio configuration:
 
 ---
 
-Note: Output generated dynamically at runtime based on real-time Yahoo Finance market data.
+## Installation & Setup
+
+1. **Clone the Repository**
+   ```bash
+   git clone [https://github.com/your-username/portfolio-tracker.git](https://github.com/your-username/portfolio-tracker.git)
+   cd portfolio-tracker
+Install Dependencies
+
+Bash
+pip install yfinance numpy
+Run the Script
+
+Bash
+python portfolio_tracker.py
+Sample Terminal Output
+Note: Output generated dynamically at runtime based on live Yahoo Finance market data.
 
 Plaintext
 ======================================================================
@@ -39,5 +54,7 @@ Ticker: IJR   | Shares: 1.1082 | Price: $136.04 | Value: $150.76   | Vol: 16.5% 
 Total Portfolio Value:       $3,245.07
 Weighted Annual Volatility:  13.63%
 ======================================================================
+Architecture Overview
+Position Class: Handles individual stock data fetching, daily log-return transformation, annualized volatility calculations, and trend evaluation.
 
-
+Portfolio Class: Aggregates position objects, computes weighted portfolio-level statistics, and formats the output display.
