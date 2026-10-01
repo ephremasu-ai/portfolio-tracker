@@ -1,43 +1,42 @@
-# Quantitative Portfolio Tracker & Risk Engine
+# Quantitative Portfolio Risk & Performance Tracker
 
-An Object-Oriented Python application designed to track real-time stock positions, evaluate market trend signals, and compute portfolio-level annualized volatility metrics using `yfinance` and `numpy`.
+An object-oriented Python application that tracks stock portfolio positions, fetches real-time market data via `yfinance`, and computes core quantitative risk and trend metrics.
+
+---
 
 ## Key Features
-- **Object-Oriented Architecture**: Modular `Position` and `Portfolio` classes managing holdings, allocations, and data aggregation.
-- **Live Market Data Integration**: Fetches real-time prices and historical price series directly via the Yahoo Finance API (`yfinance`).
-- **Quant Risk Metrics**: Calculates annualized log-return volatility ($\sigma_{ann} = \sigma_{daily} \times \sqrt{252}$).
-- **Trend Following Signals**: Evaluates current prices against a 50-day Simple Moving Average (SMA) to classify positions as BULLISH or BEARISH.
 
-## Technologies Used
-- Python 3.x
-- NumPy (Vectorized quantitative math)
-- yfinance (Financial market data retrieval)
+- **Real-Time Market Data Integration:** Fetches historical daily prices dynamically using `yfinance`.
+- **Quantitative Risk Analytics:** Computes annualized log-return volatility scaled by trading days ($\sqrt{252}$).
+- **Trend Identification:** Evaluates position signals against a 50-day Simple Moving Average (SMA).
+- **Portfolio Aggregation:** Calculates weighted portfolio volatility and position weights.
+- **Terminal Dashboard:** Formatted ASCII table summarizing current holdings and portfolio-level analytics.
 
-## How It Works
-```python
-from portfolio_tracker import Portfolio, Position
+---
 
-# Instantiate portfolio and add positions
-my_portfolio = Portfolio()
-my_portfolio.add_position(Position("VOO", 4.0))
-my_portfolio.add_position(Position("NVDA", 1.0))
+## Holdings
 
-# Output aggregated risk dashboard
-my_portfolio.display_dashboard()
-Portfolio: Stock Nvidia| Weight: 24.3| Cost 182.67
-Portfolio: Stock VOO| Weight: 56.2| Cost 634.32
-Holdings 1 Heatmap: red
-Holdings 2 Heatmap: green
-Selection List: ['VOO', 'QQQM', 'VTI']
-Output of Quantitative Portfolio Tracker & Risk Engine
+The tracker defaults to the following portfolio configuration:
+
+| Ticker | Asset Description | Position Size |
+| :--- | :--- | :--- |
+| **VOO** | Vanguard S&P 500 ETF | 4.0886 shares |
+| **NVDA** | NVIDIA Corporation | 1.0017 shares |
+| **IJR** | iShares Core S&P Small-Cap ETF | 1.1082 shares |
+
+---
+
+Note: Output generated dynamically at runtime based on real-time Yahoo Finance market data.
+
 ======================================================================
-          QUANT PORTFOLIO RISK & PERFORMANCE DASHBOARD           
+          QUANT PORTFOLIO RISK & PERFORMANCE DASHBOARD          
 ======================================================================
-Ticker: VOO   | Shares: 4.08   | Price: $524.15 | Value: $2,137.54 | Vol: 12.4% | Signal: BULLISH | Weight: 80.5%
-Ticker: NVDA  | Shares: 1.00   | Price: $121.40 | Value: $121.50   | Vol: 48.2% | Signal: BULLISH | Weight: 4.6%
-Ticker: IJR   | Shares: 1.11   | Price: $358.12 | Value: $396.87   | Vol: 18.1% | Signal: BEARISH | Weight: 14.9%
+Ticker: VOO   | Shares: 4.0886 | Price: $700.86 | Value: $2,865.54 | Vol: 11.2% | Signal: BULLISH | Weight: 88.3%
+Ticker: NVDA  | Shares: 1.0017 | Price: $228.38 | Value: $228.77   | Vol: 42.1% | Signal: BULLISH | Weight:  7.1%
+Ticker: IJR   | Shares: 1.1082 | Price: $136.04 | Value: $150.76   | Vol: 16.5% | Signal: BULLISH | Weight:  4.6%
 ----------------------------------------------------------------------
-Total Portfolio Value:       $2,655.91
-Weighted Annual Volatility:  14.88%
+Total Portfolio Value:       $3,245.07
+Weighted Annual Volatility:  13.63%
 ======================================================================
+
 
