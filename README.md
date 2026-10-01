@@ -42,7 +42,7 @@ Bash
 python portfolio_tracker.py
 Sample Terminal Output
 Note: Output generated dynamically at runtime based on live Yahoo Finance market data.
-
+'''text
 Plaintext
 ======================================================================
           QUANT PORTFOLIO RISK & PERFORMANCE DASHBOARD          
@@ -56,5 +56,5 @@ Weighted Annual Volatility:  13.63%
 ======================================================================
 Architecture Overview
 Position Class: Handles individual stock data fetching, daily log-return transformation, annualized volatility calculations, and trend evaluation.
-
+'''
 Portfolio Class: Aggregates position objects, computes weighted portfolio-level statistics, and formats the output display.
